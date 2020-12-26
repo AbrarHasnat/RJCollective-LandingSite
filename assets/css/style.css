@@ -1,27 +1,27 @@
 /* Theme Description
 -------------------------------------------------
 
-	  Theme Name:
-	  Author:
-	  Support:
-	  Description:
-	  Version:
-	  
+    Theme Name:
+    Author:
+    Support:
+    Description:
+    Version:
+    
 ------------------------------------------------- 
 */
 /* CSS Index
 -------------------------------------------------
 
-	1. Theme default css
-	2. header
-	3. slider
-	4. about-area
-	5. features-box
-	6. department
-	7. team
-	8. video-area
-	9. counter
-	10. footer
+  1. Theme default css
+  2. header
+  3. slider
+  4. about-area
+  5. features-box
+  6. department
+  7. team
+  8. video-area
+  9. counter
+  10. footer
 
 -------------------------------------------------
 */
@@ -87,8 +87,8 @@
 
 /*------------------- Responsive --------------------------*/
 /*
-	@include transition(.4s);
-	color:$theme-color;
+  @include transition(.4s);
+  color:$theme-color;
 */
 /* line 63, ../../SAIFUL/Running_project/250 eCommerce_HTML/250 eCommerce_HTML/250 eCommerce_HTML/assets/scss/_variables.scss */
 .boxed-btn {
@@ -518,6 +518,10 @@ input:focus::-moz-placeholder {
   transform-origin: 0 0;
   transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
   transform: scaleX(0);
+}
+
+.footer-right-menu {
+    text-align:right;
 }
 
 /* line 271, ../../SAIFUL/Running_project/250 eCommerce_HTML/250 eCommerce_HTML/250 eCommerce_HTML/assets/scss/_common.scss */
@@ -2580,7 +2584,7 @@ input:focus::-moz-placeholder {
 
 /* line 715, ../../SAIFUL/Running_project/250 eCommerce_HTML/250 eCommerce_HTML/250 eCommerce_HTML/assets/scss/_common.scss */
 .padding-bottom {
-  padding-bottom: 250px;
+  padding-bottom: 350px;
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1600px) {
@@ -2869,6 +2873,13 @@ input:focus::-moz-placeholder {
   .latest-padding {
     padding-top: 60px;
     padding-bottom: 5px;
+  }
+}
+
+@media (max-width: 1000px) {
+  /* line 690, ../../SAIFUL/Running_project/250 eCommerce_HTML/250 eCommerce_HTML/250 eCommerce_HTML/assets/scss/_common.scss */
+  .footer-right-menu {
+    text-align:center;
   }
 }
 
@@ -3709,7 +3720,7 @@ input:focus {
 /* line 224, ../../SAIFUL/Running_project/250 eCommerce_HTML/250 eCommerce_HTML/250 eCommerce_HTML/assets/scss/_headerMenu.scss */
 .header-bottom .header-right .shopping-card::before {
   position: absolute;
-  content: "02";
+  content: attr(data-value);
   width: 25px;
   height: 25px;
   background: #00b1ff;
@@ -3730,6 +3741,18 @@ input:focus {
 
 /* line 240, ../../SAIFUL/Running_project/250 eCommerce_HTML/250 eCommerce_HTML/250 eCommerce_HTML/assets/scss/_headerMenu.scss */
 .header-bottom .header-right .shopping-card i {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 50%;
+  border: 1px solid #eeeeee;
+  color: #4e4e4e;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.header-bottom .header-right .login i {
   width: 50px;
   height: 50px;
   line-height: 50px;
